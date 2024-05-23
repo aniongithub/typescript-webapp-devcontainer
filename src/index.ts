@@ -17,9 +17,6 @@ function setupScene() {
 	});
 	renderer.setSize(width, height);
 
-	// Create a perspective camera with a field of view of 60 degrees, aspect ratio based on window size, and near/far clipping planes
-	const camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 100);
-
 	// Create a box geometry with dimensions of 1x1x1
 	const geometry = new THREE.BoxGeometry(1, 1, 1);
 
@@ -36,9 +33,17 @@ function setupScene() {
 	// Add the cube to the scene
 	scene.add(cube);
 
+	// Create a perspective camera with a field of view of 60 degrees, aspect ratio based on window size, and near/far clipping planes
+	const camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 100);
 	// Set the camera position to (0, 0, 5) and make it look at the origin
-	camera.position.z = 5;
+	camera.position.z = 2.5;
 	camera.lookAt(0, 0, 0);
+	// Update the camera aspect ratio when the window is resized
+	window.addEventListener('resize', () => {
+		camera.aspect = window.innerWidth / window.innerHeight;
+		camera.updateProjectionMatrix();
+		renderer.setSize(window.innerWidth, window.innerHeight);
+	});
 
 	// Create a point light and position it at (0, 0, 2)
 	const light = new THREE.PointLight(0xffffff, 1, 1000);
