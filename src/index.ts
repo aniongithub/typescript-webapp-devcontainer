@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-const RotationSpeed = 0.01; // Speed factor for rotation
+const RotationSpeed = 0.5; // Speed factor for rotation
 
 /**
  * Sets up the Three.js scene with a renderer, camera, cube, lights, and renders it on a canvas.
