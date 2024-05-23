@@ -33,6 +33,7 @@ Note that this is common infrastructure if you use devcontainers on your system 
    ![1716436169967](image/README/1716436169967.png)
 8. When the devcontainer is ready, you can use `Ctrl/Cmd+Shift+B` (choose `npm:build`) to build the project
 9. Press `F5` to launch it. A new browser window will open, showing you a rotating green cube on a sky blue background.
+   ![1716443619005](image/README/1716443619005.png)
 10. You can now use breakpoints in VS Code or setup the default build task to be `npm:watch` if you want any changes to automatically be compiled and available in the debug browser. Note that you may need to press `Shift+F5` to force the browser to refresh any changes.
 
 ### Github CodeSpaces
@@ -69,9 +70,7 @@ Note that this is common infrastructure if you use devcontainers on your system 
 
 3. Install the recommended extensions (from `.vscode/extensions.json`)
    ![1716437904187](image/README/1716437904187.png)
-4. Press `F5` to launch the debugger. A new browser window will open, showing you a rotating green cube on a sky blue background.
-   ![1716439109216](image/README/1716439109216.png)
-5. You can now use breakpoints in VS Code or setup the default build task to be `npm:watch` if you want any changes to automatically be compiled and available in the debug browser. Note that you may need to press `Shift+F5` to force the browser to refresh any changes.
+4. Press `F5` to launch the debugger. A new browser window will open, showing you a rotating green cube on a sky blue background.You can now use breakpoints in VS Code or setup the default build task to be `npm:watch` if you want any changes to automatically be compiled and available in the debug browser. Note that you may need to press `Shift+F5` to force the browser to refresh any changes.
 
 ## License
 
