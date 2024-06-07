@@ -1,0 +1,8 @@
+{
+    "workbench.editorAssociations": {
+        "*.md": "cweijan.markdownViewer"
+    },
+    "markdown.copyFiles.destination": {
+        "${documentDirName}/${documentFilename}": "images/${documentRelativeDirName}/${documentBaseName}/${fileName}"
+    },
+}
