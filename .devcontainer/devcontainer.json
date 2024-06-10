@@ -16,7 +16,9 @@
 		"vscode": {
 			"extensions": [
 				"msjsdiag.debugger-for-chrome",
-				"cweijan.vscode-typora"
+				"cweijan.vscode-typora",
+				"MS-vsliveshare.vsliveshare",
+				"idered.npm"
 			]
 		}
 	},

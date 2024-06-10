@@ -3,7 +3,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   devtool: 'source-map',
   module: {
     rules: [
@@ -17,6 +17,11 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+        exclude: /node_modules/
+      }      
     ],
   },
   resolve: {
