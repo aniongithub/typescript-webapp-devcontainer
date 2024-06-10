@@ -41,7 +41,6 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: 'src/assets', to: 'assets', noErrorOnMissing: true }, // copy all assets
-        { from: 'src/css', to: 'css', noErrorOnMissing: true }, // copy all assets
         { from: '**/*.html', to: '[path][name][ext]', context: 'src/' }, // copy all HTML files with directory structure
       ],
     }),

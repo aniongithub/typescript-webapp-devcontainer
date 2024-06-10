@@ -1,10 +1,10 @@
 import React from 'react';
-import './css/App.css';
+import './App.css';
 
 const App: React.FC = () => {
     return (
       <div>
-        <h1>Hello, React with TypeScript!</h1>
+        <h1>Hello, React+Webpack with TypeScript!</h1>
       </div>
     );
 }
