@@ -3,7 +3,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.tsx',
+  entry: "./src/index.tsx",
   devtool: 'source-map',
   module: {
     rules: [
@@ -14,7 +14,7 @@ module.exports = {
       },      
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: [ 'ts-loader' ],
         exclude: /node_modules/,
       },
       {
@@ -24,13 +24,19 @@ module.exports = {
       }      
     ],
   },
+  target: 'web',
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: 'index.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
+  devServer: {
+    static: path.join(__dirname, "dist"),
+    compress: true,
+    port: 3000,
+  },  
   plugins: [
     new CopyPlugin({
       patterns: [

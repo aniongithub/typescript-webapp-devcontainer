@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
 
 const App: React.FC = () => {
     return (
-      <div className="App">
+      <div>
         <h1>Hello, React with TypeScript!</h1>
       </div>
     );
